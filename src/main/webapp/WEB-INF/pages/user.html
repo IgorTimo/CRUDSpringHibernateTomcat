@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<html lang="en">
+<head>
+    <title>User</title>
+</head>
+<body>
+<h2>User with id = <label th:text="${user.id}"></label></h2>
+Name: <label th:text="${user.name}"></label>
+<br>
+Surname: <label th:text="${user.surname}"></label>
+<br>
+Age: <label th:text="${user.age}"></label>
+<br>
+<a th:href="@{/user/edit (id = ${user.id})}">Edit user</a>
+<a th:href="@{/user/delete (id = ${user.id})}">Delete user</a>
+<br>
+<br>
+<br>
+<a th:href="@{/users}">Back to all users</a>
+
+
+
+
+
+</body>
